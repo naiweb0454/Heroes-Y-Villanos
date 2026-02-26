@@ -13,7 +13,7 @@ public class Princesa extends Personaje{
 //		}
 		
 		public String saludar(Personaje p) {
-			return "Hola " + p.getNombre() + " soy la princesa " + this.nombre;
+			return "Hola " + p.getNombre() + " soy la ✨princesa✨ " + this.nombre;
 		}
 		
 		public String darMedalla(Personaje p) {
