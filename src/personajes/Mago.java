@@ -32,7 +32,14 @@ public class Mago extends Personajes{
 		//}
 	}
 
+	public void esquivar() {
+		this.movimiento += 15;
+		this.experiencia += 1;
+		System.out.println(this.nombre + " se vuelve más ágil!");
+	}
 
+	//	public int getMovimiento() {
+	//
 
 
 	
