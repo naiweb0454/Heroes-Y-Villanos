@@ -42,7 +42,19 @@ public class Mago extends Personajes{
 	//
 
 
-	
+	public void rayoMagico(Personajes o) {
+		Random rand = new Random();
+		boolean exito = rand.nextBoolean(); // true o false aleatorio
+
+		if (exito) {
+			int daño = 20; //generamos un valor para daño
+			o.setPuntosVida(o.getPuntosVida() - daño); //cogemos los puntos de vida y le restamos el daño (20)
+			this.experiencia += 5;// esto suma experiencia de 5
+			System.out.println(this.nombre + " lanza un rayo mágico y quita " + daño + " de vida a " + o.getNombre());
+		} else {
+			System.out.println(this.nombre + " intentó lanzar el rayo mágico, pero falló!");
+		}
+	}
 
 
 	//return movimiento;
