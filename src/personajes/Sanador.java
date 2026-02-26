@@ -14,7 +14,7 @@ public class Sanador extends Personaje{
 	public String Curacion(Personaje p) {
 		p.setPuntosVida(p.getPuntosVida() + ((p.getPuntosVida()/100)*30));
 		this.puntosHabilidad -= 8;
-		return this.nombre + " ha curado a " + p.getNombre();
+		return this.nombre + " ha ❤️‍🩹curado❤️‍🩹 a " + p.getNombre();
 	}
 	
 	public String Meditacion() {
